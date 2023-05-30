@@ -17,7 +17,12 @@ provider "aws" {
 resource "aws_instance" "tf-ec2" {
   ami           = "ami-0c02fb55956c7d316"
   instance_type = "t2.micro"
+  key_name = "oslo"
   tags = {
     "Name" = "created-by-tf"
   }
+}
+
+resource "aws_s3_bucket" "tf-s3" {
+  bucket = "oliver-tf-test-bucket-oslo"
 }

@@ -1,4 +1,4 @@
-terraform {
+terraform {                  # Bu blok olmadan da bu dosya calisirdi. 
   required_providers {
     aws = {
       source = "hashicorp/aws"

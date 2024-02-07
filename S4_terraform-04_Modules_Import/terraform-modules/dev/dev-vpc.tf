@@ -1,6 +1,6 @@
 module "tf-vpc" {
   source = "../modules"
-  environment = "DEV"
+  environment = "DEV"               # bunun altina degistirmek istedigimiz varaibles i giriyoruz.
   }
 
 output "vpc-cidr-block" {

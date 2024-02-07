@@ -55,6 +55,9 @@ egenskaper og tilkoblinger mellom ressursene.
 > terraform state show aws.instance_example
 # brukes til å vise detaljert informasjon om en spesifikk ressurs som er sporet av Terraform i den gjeldende tilstanden.
 
+$ terraform import aws_security_group.tf-sg sg-01b92e29e828a2177
+$ terraform import "aws_instance.tf-instances[0]" i-090291cc33c16504c
+$ terraform import "aws_instance.tf-instances[1]" i-092fe70d1cef163c1
 
 
 
